@@ -1,0 +1,18 @@
+{
+    "new_event_title": "Dummy booking  title",
+    "new_event_description" : "Dummy booking description",
+    "new_event_category" : "Concert",
+    "new_event_city" : "Bangalore",
+    "new_event_venue" : "whitefield, Bangalore-560067",
+    "new_event_date_time": "23120020292000",
+    "new_event_price": "100",
+    "new_event_total_seats" :"1000",
+    "event_booking_number_of_tickets": "3",
+    "event_booking_full_name": "Dummy Name",
+    "event_booking_email": "dummy@dummy.com",
+    "event_booking_phone_number": "9999999999",
+    "event_booking_refund_eligible_msg":"Eligible for refund.",
+     "event_booking_refund_not_eligible_msg":"Not eligible for refund."
+
+
+}

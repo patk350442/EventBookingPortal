@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Booking POST Response",
+  "type": "object",
+  "properties": {
+    "success": { "type": "boolean" },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "number" },
+        "eventId": { "type": "number" },
+        "userId": { "type": "number" },
+        "customerName": { "type": "string" },
+        "customerEmail": { "type": "string" },
+        "customerPhone": { "type": "string" },
+        "quantity": { "type": "number" },
+        "totalPrice": { "type": "string" },
+        "status": { "type": "string" },
+        "bookingRef": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "event": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "number" },
+            "title": { "type": "string" },
+            "description": { "type": "string" },
+            "category": { "type": "string" },
+            "venue": { "type": "string" },
+            "city": { "type": "string" },
+            "eventDate": { "type": "string" },
+            "price": { "type": "string" },
+            "totalSeats": { "type": "number" },
+            "availableSeats": { "type": "number" },
+            "imageUrl": { "type": "string" },
+            "isStatic": { "type": "boolean" },
+            "userId": { "type": ["number", "null"] },
+            "createdAt": { "type": "string" },
+            "updatedAt": { "type": "string" }
+          },
+          "required": ["id", "title", "venue", "city", "totalSeats"]
+        }
+      },
+      "required": ["id", "customerName", "bookingRef", "status", "quantity", "totalPrice", "event"]
+    },
+    "message": { "type": "string" }
+  },
+  "required": ["success", "data", "message"]
+}

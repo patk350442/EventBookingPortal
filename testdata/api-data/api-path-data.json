@@ -1,0 +1,5 @@
+{
+    "auth_path" : "/api/auth/login",
+    "booking_path" : "/api/bookings",
+    "events_path": "/api/events"
+}
