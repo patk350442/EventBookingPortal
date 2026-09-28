@@ -9,6 +9,19 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+parameters:
+  - name: SECRET_KEY2
+    displayName: 'Select Script Key'
+    type: string
+    default: 'ui_api_chrome'
+    values:
+      - ui_api_chrome
+      - ui_qa_chrome_headed
+      - ui_api_chrome_headed
+      - ui_api_chrome_firefox
+
+
+
 steps:
 - task: UseNode@1
   inputs:
