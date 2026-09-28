@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "ui_qa_chrome_headed": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed",
+    "ui_api_chrome": " SECRET_KEY=prateek ENV_NAME=qa npx playwright test --project=chromium --project=apiTests",
     "ui_api_chrome_headed": " SECRET_KEY=prateek ENV_NAME=qa npx playwright test --project=chromium --headed --project=apiTests"
   },
   "keywords": [],
