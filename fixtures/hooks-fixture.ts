@@ -1,4 +1,5 @@
 import {test as base} from '../fixtures/common-fixture';
+import { LoginPage } from '../pageobjects/LoginPage';
 
 interface HooksFixture
 {
