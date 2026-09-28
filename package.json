@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "ui_qa_chrome_headed": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed",
-    "ui_api_chrome": "ENV_NAME=qa npx playwright test --project=chromium --project=apiTests",
-    "ui_api_chrome_headed": "ENV_NAME=qa npx playwright test --project=chromium --headed --project=apiTests"
+    "ui_api_chrome": "cross-env ENV_NAME=qa npx playwright test --project=chromium --project=apiTests",
+    "ui_api_chrome_headed": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed --project=apiTests"
   },
   "keywords": [],
   "author": "",
