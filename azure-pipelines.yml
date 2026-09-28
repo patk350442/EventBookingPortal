@@ -6,13 +6,13 @@
 #trigger:
 #- main
 
-schedules:
-  - cron: "0 4 * * 1-5"
-    displayName: "Daily Automatic Pipeline Run"
-    branches:
-      include:
-        - main
-    always: true
+#schedules:
+#  - cron: "0 4 * * 1-5"
+#    displayName: "Daily Automatic Pipeline Run"
+#    branches:
+#      include:
+#        - main
+#    always: true
 
 pool:
   vmImage: ubuntu-latest
