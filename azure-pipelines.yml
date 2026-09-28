@@ -41,7 +41,7 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: 'playwright-report'
-    artifact: 'Playwright HTML Report'
+    artifact: 'playwright-report'
     publishLocation: 'pipeline'
   condition: always()
 
