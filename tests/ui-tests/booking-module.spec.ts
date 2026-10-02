@@ -17,6 +17,7 @@ test.describe('Verify My Bookings module ', async () => {
         }
     }, async ({ page, goToURL, navigationPage, myBookingsPage,newEventPage, eventsPage, commonApiUtils }) => {
 
+       
         const bookingResponseJson = await commonApiUtils.createBooking();
         const bookingRef = bookingResponseJson.data.bookingRef;
         const bookingEventTitle = bookingResponseJson.data.event.title;
